@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sec-10k-extractor"
+version = "0.1.0"
+description = "Download the latest SEC 10-K filings and convert them to PDF."
+requires-python = ">=3.10"
+dependencies = ["playwright>=1.50"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
